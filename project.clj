@@ -9,7 +9,9 @@
                  [stencil "0.3.0-preview1"]
 ;                 [markdown-clj "0.6"]
                  [org.markdownj/markdownj "0.3.0-1.0.2b4"]]
-  :repositories {"scala-tools" "http://scala-tools.org/repo-releases"}
+  :repositories {"scala-tools" "http://scala-tools.org/repo-releases"
+                 "google-apis" "http://mavenrepo.google-api-java-client.googlecode.com/hg"
+                 }
 
   :main cloto.server
   
