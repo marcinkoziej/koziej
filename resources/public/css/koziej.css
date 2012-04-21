@@ -1,0 +1,77 @@
+
+/*
+ * red color: #EA7424
+ */
+
+
+@font-face {
+    font-family: "Prozak";
+    src: url("/fonts/Prozak.ttf");
+}
+
+#page-wrapper {
+    margin: auto;
+
+}
+
+#logo-space {
+    color: black;
+    font-size: 6.153em;
+    line-height: 1.125em;
+    text-align: right;
+}
+
+.accent {
+    color: #EA7424;
+}
+
+.background-accent {
+    background-color: #EA7424;
+}
+
+.headline-font {
+    font-family: Prozak, Verdana, sans-serif;
+}
+
+
+#menu-top-decoration {
+    height: 6.923em; /* 90px */
+}
+
+
+#menu {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#menu li {
+    font-size: 2.77em;
+    line-height: 1.5em;
+    color: #666666;
+}
+
+#menu li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+
+#main-content {
+    font-family: Helvetica, sans-serif;
+}
+
+#main-content p {
+    text-align: justify;
+    text-justify: newspaper;
+    font-size: 1.077em;
+}
+
+#main-content h1 {
+    margin-top: 1.2em; 
+    margin-bottom: 0.6em;
+}
+
+#main-content a {
+    color: #EA7424;
+}
