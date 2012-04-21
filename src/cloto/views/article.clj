@@ -2,7 +2,7 @@
   (:use [noir.core :only [defpage]])
   (:use [clojure.java.io :only [resource file]])
   (:require [clojure.tools.logging :as log])
-  (:use [ring.util.response :only [response]])
+  (:use [ring.util.response :only [response redirect]])
   (:require stencil.core)
   (:import [com.petebevin.markdown MarkdownProcessor]))
 
@@ -25,5 +25,9 @@
                             {:content
                              (slurp (resource "about.html"))}
                             )
+
+  )
+(defpage "/" []
+  (redirect "/article/kooperatywy")
 
   )
