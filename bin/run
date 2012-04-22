@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export PORT=8222
+dir=`dirname $0`
+cd $dir/..
+pwd
+$HOME/bin/lein run 2>&1 >> cloto.log &
+echo $! > cloto.pid
+
