@@ -7,7 +7,15 @@
 @font-face {
     font-family: "Prozak";
     src: url("/fonts/Prozak.ttf");
+    font-weight: bold;
 }
+
+@font-face {
+    font-family: "Prozak";
+    src: url("/fonts/Prozak_Light.ttf");
+    font-weight: normal;
+}
+
 
 #page-wrapper {
     margin: auto;
@@ -19,6 +27,7 @@
     font-size: 6.153em;
     line-height: 1.125em;
     text-align: right;
+    font-weight: bold;
 }
 
 .accent {
@@ -42,6 +51,7 @@
 #menu {
     list-style-type: none;
     margin-left: 0;
+    margin-top: 8.307em; /* 108px @ 13/18px */
     padding-left: 0;
 }
 
