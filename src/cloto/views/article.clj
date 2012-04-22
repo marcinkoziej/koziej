@@ -9,9 +9,9 @@
 
 
 (defpage "/article/:slug" {slug :slug}
-  (let [content-file (file  (resource "article") slug)
+  (let [content-file (resource (str "article/" slug))
         get-proc (memoize (constantly (MarkdownProcessor.)))]
-    (when (.exists content-file)
+    (when content-file
       (stencil.core/render-file "design.html"
                                 {:content
                                  (.markdown (get-proc)

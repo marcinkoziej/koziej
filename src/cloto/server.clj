@@ -1,7 +1,7 @@
 (ns cloto.server
   (:require [noir.server :as server]))
 
-(server/load-views "src/cloto/views/")
+(server/load-views-ns 'cloto.views)
 
 (def ^{:dynamic :private} *srv* nil)
 
