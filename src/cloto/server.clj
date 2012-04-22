@@ -1,5 +1,6 @@
 (ns cloto.server
-  (:require [noir.server :as server]))
+  (:require [noir.server :as server])
+  (:gen-class))
 
 (server/load-views-ns 'cloto.views)
 

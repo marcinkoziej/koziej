@@ -13,7 +13,7 @@
     ~@code))
 
 
-(defn shutdown []
+(defn shutdown [sig]
   (print "disconnecting from Neo4j")
   (when neo/*neo-db*
     (neo/stop!)))

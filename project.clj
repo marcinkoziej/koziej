@@ -9,10 +9,17 @@
                  [stencil "0.3.0-preview1"]
 ;                 [markdown-clj "0.6"]
                  [org.markdownj/markdownj "0.3.0-1.0.2b4"]]
+  :dev-dependencies [[leiningen-init-script "1.2.0-SNAPSHOT"]]
   :repositories {"scala-tools" "http://scala-tools.org/repo-releases"
                  "google-apis" "http://mavenrepo.google-api-java-client.googlecode.com/hg"
                  }
-
+;; not working :-/
+  :lis-opts {
+    :redirect-output-to "/home/mkoziej/cloto/cloto.log"
+    :install-dir "/home/mkoziej/lib"
+    :java-opts [ "-server" ]
+    }
   :main cloto.server
   
   )
+
