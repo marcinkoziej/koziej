@@ -1,14 +1,14 @@
-(ns cloto.views.dashboard
+(ns ontork.views.dashboard
   (:use [noir.core :only [defpartial defpage]]
         [hiccup.page-helpers])
   (:require [borneo.core :as neo])
-  (:require cloto.data))
+  (:require ontork.data))
 
 
 (defpartial layout [work-list content]
   (html5
    [:head
-    [:title "Cloto :-)"]
+    [:title "Ontork :-)"]
     (include-css "/css/bootstrap.css")
     (include-js "/js/bootstrap.js")]
    [:body
@@ -28,7 +28,7 @@
    (map (fn [x] (let [s (:slug (neo/props x))]
                   [:a {:href (str "/pages/" s)} s]))
 
-        (cloto.data/all-pages))
+        (ontork.data/all-pages))
    (if slug
      [:p "No page selected"])
    ))

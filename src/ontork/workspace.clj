@@ -1,8 +1,8 @@
-(ns cloto.workspace
+(ns ontork.workspace
   (:require [borneo.core :as neo])
-  (:require [cloto.freebase :as freebase])
+  (:require [ontork.freebase :as freebase])
   (:require [clojure.string :as str])
-  (:use [cloto.data :only [with-db]])
+  (:use [ontork.data :only [with-db]])
   (:use [clojure.pprint :only [pprint]])
   )
 

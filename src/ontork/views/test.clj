@@ -1,4 +1,4 @@
-(ns cloto.views.test
+(ns ontork.views.test
   (:use [noir.core :only [defpage]])
   (:use [clojure.java.io :only [ resource file]])
   (:require [clojure.tools.logging :as log])

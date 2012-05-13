@@ -1,8 +1,8 @@
-(ns cloto.server
+(ns ontork.server
   (:require [noir.server :as server])
   (:gen-class))
 
-(server/load-views-ns 'cloto.views)
+(server/load-views-ns 'ontork.views)
 
 (def ^{:dynamic :private} *srv* nil)
 
